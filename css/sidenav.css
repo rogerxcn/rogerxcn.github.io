@@ -63,3 +63,9 @@
     visibility: hidden;
   }
 }
+
+@media print {
+  #mySidenav a {
+    visibility: hidden;
+  }
+}

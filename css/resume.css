@@ -122,9 +122,6 @@ footer {
   .print {
     display: none;
   }
-  header,footer {
-    display: none;
-  }
 }
 @media screen and (max-width: 48rem) {
   html {
