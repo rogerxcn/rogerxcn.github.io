@@ -2,6 +2,7 @@ html {
   width: 100%;
   font-size: 14px;
 }
+
 body {
   text-align: center;
   width: 100%;
@@ -12,13 +13,16 @@ body {
   color: #555;
   background-color: #fbfbfb;
 }
+
 a {
   text-decoration: none;
   color: #08c;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 .container {
   max-width: 48rem;
   margin-left: auto;
@@ -26,6 +30,7 @@ a:hover {
   text-align: left;
   margin-bottom: 1rem;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -33,31 +38,39 @@ header {
   padding-top: 2.2rem;
   padding-bottom: 2.2rem;
 }
+
 #name-wrapper {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 #fullname {
   font-size: 2.2rem;
 }
+
 #jobtitle {
   font-size: 1.2rem;
   margin-top: .8rem;
 }
+
 #contact {
   font-size: 1rem;
   padding-top: 1rem;
 }
+
 .contact-item:nth-child(1) {
   margin-top: 0;
 }
+
 .contact-item {
   margin-top: .4rem;
 }
+
 .contact-item a {
   color: inherit;
   text-decoration: none;
 }
+
 section {
   display: flex;
   padding-top: 2.4rem;
@@ -66,47 +79,59 @@ section {
   border-bottom: .1rem solid #bbbbbb;
   hyphens: auto;
 }
+
 .section-title {
   font-size: 1.6rem;
   text-align: left;
   min-width: 10rem;
 }
+
 .section-content {
 }
+
 .section-flex {
   display: flex;
   flex-wrap: wrap;
 }
+
 .block {
   margin-bottom: 2rem;
 }
+
 .block-square {
   width: 18rem;
 }
+
 .block-square:nth-last-child(2) {
   margin-bottom: 0;
 }
+
 .block:last-child {
   margin-bottom: 0;
 }
+
 .block-title {
   font-size: 1.2rem;
   margin-bottom: .4rem;
   font-weight: bold;
 }
+
 .block-company {
   font-size: 1.0rem;
   margin-bottom: .4rem;
 }
+
 .block-subtitle {
   font-size: 1rem;
   margin-bottom: 1rem;
   color: #bbbbbb;
 }
+
 .block-content {
   font-size: 1rem;
   line-height: 1.5;
 }
+
 footer {
   color: #bbbbbb;
   font-size: 1rem;
@@ -115,52 +140,61 @@ footer {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 @media print {
   html {
     font-size: 12px;
   }
-  .print {
-    display: none;
-  }
 }
+
 @media screen and (max-width: 48rem) {
   html {
     font-size: 12px;
   }
+
   .container {
     padding-left: .4rem;
     padding-right: .4rem;
   }
+
   header {
     display: block;
     padding-bottom: 1rem;
   }
+
   #name-wrapper {
     text-align: center;
     padding-bottom: 2rem;
   }
+
   #contact {
     padding-top: 1rem;
     border-top: .1rem solid #bbbbbb;
   }
+
   .contact-item {
     padding-top: .2rem;
     padding-left: .4rem;
   }
+
   section {
     display: block;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
   .section-title {
     text-align: center;
     margin-bottom: 2rem;
   }
+
   .section-flex {
     display: block;
   }
+
   .block-square {
   }
+
   .block-square:nth-last-child(2) {
     margin-bottom: 2rem;
   }
