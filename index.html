@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://rogerxcn.github.io/css/resume.css">
   </head>
   <body>
+
     <div class="container">
       <header>
         <div id="name-wrapper">
@@ -39,6 +40,65 @@
         </div>
       </header>
 
+
+      <section id="skills">
+        <div class="section-title">
+          Skills
+        </div>
+        <div class="section-content">
+
+          <div class="block">
+            <div class="block-title">
+              Software
+            </div>
+            <div class="block-content">
+              C/C++, Python, CUDA, SQL, OpenGL, MATLAB, Assembly, Apache Thrift
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
+              Web Development
+            </div>
+            <div class="block-content">
+              HTML/CSS, JavaScript, Flask, Django, Nginx<br>
+              AWS EC2/S3/DynamoDB/Elastic MapReduce (and their boto3 python apis)
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
+              Deep Learning Frameworks
+            </div>
+            <div class="block-content">
+              Scikit-learn, Tensorflow, PyTorch, Keras
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
+              Hardware
+            </div>
+            <div class="block-content">
+              ARM microcontroller, Raspberry Pi, FPGA, oscilloscope, logic analyzer
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
+              Others
+            </div>
+            <div class="block-content">
+              Git, MySQL, Linux commandline <br>
+              Top-performing (Outstanding or even perfect academic performance in most classes taken)
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
       <section id="education">
         <div class="section-title">
           Education
@@ -65,16 +125,19 @@
               Aug 2015 - May 2019 | Atlanta, GA, USA
             </div>
             <div class="block-content">
-              B.S. in Computer Engineering, GPA 4.0 (out of 4.0)
+              B.S. in Computer Engineering, GPA 4.0 (out of 4.0) <br>
+              (Graduated with highest honor)
             </div>
           </div>
 
         </div>
       </section>
 
-      <section id="experience">
+
+
+      <section id="job-experience">
         <div class="section-title">
-          Experience
+          Job Experience
         </div>
         <div class="section-content">
 
@@ -120,6 +183,7 @@
             </div>
             <div class="block-content">
               - Developed automated troubleshooting tools for network devices such as routers, switches, etc <br>
+              - Developed middleware for communication using Python Flask & Apache Thrift RPC <br>
               - Visualized the entire network topography containing hundreds of thousands of nodes using JavaScript
             </div>
           </div>
@@ -128,48 +192,24 @@
       </section>
 
 
-      <section id="skills">
+
+      <section id="research-experience">
         <div class="section-title">
-          Skills
+          Research Experience
         </div>
         <div class="section-content">
 
           <div class="block">
             <div class="block-title">
-              Software
+              Accelerating Neural Network with Emerging Resistive Memory Devices
+            </div>
+            <div class="block-subtitle">
+              Senior Design Project (2019) | with Dr. Shimeng Yu, Professor @ Georgia Tech
             </div>
             <div class="block-content">
-              C/C++, Python, CUDA, Assembly, HTML/CSS, Javascript, OpenGL, and MATLAB
+              Implemented a hardware accelerator of a fully-connected layer with a resistive crossbar matrix.
             </div>
           </div>
-
-          <div class="block">
-            <div class="block-title">
-              Deep Learning Frameworks
-            </div>
-            <div class="block-content">
-              Scikit-learn, Tensorflow, PyTorch, and a little bit Keras
-            </div>
-          </div>
-
-          <div class="block">
-            <div class="block-title">
-              Hardware
-            </div>
-            <div class="block-content">
-              ARM microcontroller, Raspberry Pi, FPGA, oscilloscope, and logic analyzer
-            </div>
-          </div>
-
-
-        </div>
-      </section>
-
-      <section id="projects">
-        <div class="section-title">
-          Projects
-        </div>
-        <div class="section-content">
 
           <div class="block">
             <div class="block-title">
@@ -203,16 +243,117 @@
               Research Project (2017) | with Dr. Ying Zhang, Professor @ Georgia Tech
             </div>
             <div class="block-content">
-              Assisted in programming STM32F4 microcontroller for detecting human vital signs using a pair of doppler radars.
+              Assisted in programming STM32F4 microcontroller & implemented a C++ library for detecting human vital signs using a pair of doppler radars.
             </div>
           </div>
 
         </div>
       </section>
 
+
+
+      <section id="projects">
+        <div class="section-title">
+          Projects & Knowledge
+        </div>
+        <div class="section-content">
+
+          <div class="block">
+            <div class="block-title">
+              Computer Architecture & Performance Simulation (CPU/GPU/Memory Systems)
+            </div>
+            <div class="block-content">
+              <b>-</b> Designed a 5-stage superscalar out-of-order CPU pipeline simulator with data forwarding and a complete memory system hierachy <br><br>
+              <b>-</b> Benchmarked the above-mentioned simulator with several branch predicon policies (2-level, G-share, etc.) and several cache replacement policies (LRU, ulity-based partitioning, etc.) implemented <br><br>
+              <b>-</b> Implemented a PDOM re-convergence stack based GPU execution simulator with Thread Block Compaction for higher throughput & performance
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
+              Massively Parallel GPU Programming
+            </div>
+            <div class="block-content">
+              <b>-</b> CUDA C++ implementation of GPU-accelerated LeNet-5 CNN image classification kernel with asynchronous api calls, CUDA streams, and other optimization techniques
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
+              Cloud Computing
+            </div>
+            <div class="block-content">
+              <b>-</b> Developed a cloud database & HTML/JS UI application using Python Flask & Boto3, and Amazon RDS <br><br>
+              <b>-</b> Developed a remote IoT application for data collection using Amazon EC2/S3/DynamoDB/SQS, etc <br><br>
+              <b>-</b> Developed a distributed map-reduce application for gigabyte-level text processing
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
+              Deep Learning
+            </div>
+            <div class="block-content">
+              <b>-</b> Implemented/modified various CNN architecture in Tensorflow (LeNet, Vgg, MobileNet, etc) and tested various datasets (MNIST, CIFAR-10/100, ImageNet) for research purpose <br><br>
+              <b>-</b> Contributor, Google Tensorflow GitHub repository.
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <section id="awards">
+        <div class="section-title">
+          Honors & Awards
+        </div>
+        <div class="section-content">
+
+          <div class="block">
+            <div class="block-title">
+              Georgia Tech ECE Senior Award
+            </div>
+            <div class="block-subtitle">
+              2019
+            </div>
+            <div class="block-content">
+              For graduating with the highest academic average in the department of Electrical & Computer Engineering.
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
+              1st place in Graduate Level Advanced Computer Architecture Class
+            </div>
+            <div class="block-subtitle">
+              ECE 4100/6100 & CS 4290/6290, Fall 2017
+            </div>
+            <div class="block-content">
+              Highest overall outcome in the class.
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
+              1st place in Undergraduate Level Computer Architecture Class
+            </div>
+            <div class="block-subtitle">
+              ECE 3056, Spring 2017
+            </div>
+            <div class="block-content">
+              Highest overall outcome in the class.
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
       <section id="languages">
         <div class="section-title">
-          Languages
+          Languages <br> (Human)
         </div>
         <div class="section-content section-flex">
 
@@ -237,9 +378,12 @@
         </div>
       </section>
 
+
+
+
     </div>
     <footer>
-      <span class="print">( <a href="javascript:window.print()">PDF</a> )</span>
+      <span class="print">( <a href="javascript:window.print()">Print to PDF</a> )</span>
     </footer>
   </body>
 </html>
