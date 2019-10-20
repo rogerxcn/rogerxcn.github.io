@@ -4,11 +4,36 @@
     <title>Yunfeng's Resume (You found it!)</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135961980-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-135961980-1');
+    </script>
+
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://rogerxcn.github.io/css/resume.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/sidenav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bookmark_scrolling.js"></script>
   </head>
   <body>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="#contact" id="home">Home</a>
+      <a href="#skill" id="skills">Skills</a>
+      <a href="#education-exp" id="education">Education</a>
+      <a href="#job-experience" id="job">Experience</a>
+      <a href="#research-experience" id="research">Researches</a>
+      <a href="#projects-knowledge" id="projects">Projects</a>
+      <a href="#award" id="awards">Awards</a>
+    </div>
 
     <div class="container">
       <header>
@@ -17,9 +42,8 @@
             YUNFENG XIN
           </div>
           <div id="jobtitle">
-            Student @ Georgia Institute of Technology <br>
             Interested in: <br>
-            Computer Architecture and Software Engineering
+            <b>Computer Architecture or Software Engineering roles</b>
           </div>
         </div>
         <div id="contact">
@@ -30,9 +54,13 @@
             </a>
           </div>
 
+          <br>
+
           <div class="contact-item">
-            <i class="fa fa-envelope aria-hidden="true></i> rogerxyf@gmail.com <br> (NOT primary, expect delays)
+            <i class="fa fa-envelope aria-hidden="true></i> rogerxyf@gmail.com
           </div>
+
+          <br>
 
           <div class="contact-item">
             <a href="https://github.com/rogerxcn/">
@@ -43,7 +71,7 @@
       </header>
 
 
-      <section id="skills">
+      <section id="skill">
         <div class="section-title">
           Skills
         </div>
@@ -60,20 +88,10 @@
 
           <div class="block">
             <div class="block-title">
-              Web Development
+              Computer Architecture
             </div>
             <div class="block-content">
-              HTML/CSS, JavaScript, Flask, Django, Nginx<br>
-              AWS EC2/S3/DynamoDB/Elastic MapReduce (and their boto3 python apis)
-            </div>
-          </div>
-
-          <div class="block">
-            <div class="block-title">
-              Deep Learning Frameworks
-            </div>
-            <div class="block-content">
-              Scikit-learn, Tensorflow, PyTorch, Keras
+              CPU architecture, GPU architecture, memory systems
             </div>
           </div>
 
@@ -88,11 +106,29 @@
 
           <div class="block">
             <div class="block-title">
+              Deep Learning Frameworks
+            </div>
+            <div class="block-content">
+              Tensorflow, PyTorch, Keras, Scikit-learn
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
+              Web Development
+            </div>
+            <div class="block-content">
+              HTML/CSS, JavaScript, MySQL, Flask, Django, Nginx<br>
+              AWS EC2/S3/DynamoDB/Elastic MapReduce (and their boto3 python APIs)
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
               Others
             </div>
             <div class="block-content">
-              Git, MySQL, Linux commandline <br>
-              **Top-performing** (Outstanding or even perfect academic performance in most classes taken)
+              Git, Linux commandline <br>
             </div>
           </div>
 
@@ -101,7 +137,7 @@
 
 
 
-      <section id="education">
+      <section id="education-exp">
         <div class="section-title">
           Education
         </div>
@@ -127,8 +163,9 @@
               Aug 2015 - May 2019 | Atlanta, GA, USA
             </div>
             <div class="block-content">
-              B.S. in Computer Engineering, <b>GPA 4.0</b> (out of 4.0) <br>
-              (Graduated with highest honor)
+              B.S. in Computer Engineering (graduated with <b>highest honor</b>)<br>
+              <b>GPA 4.0</b> (out of 4.0) <br>
+              (Outstanding or even perfect academic performance in most classes taken)
             </div>
           </div>
 
@@ -139,7 +176,7 @@
 
       <section id="job-experience">
         <div class="section-title">
-          Job Experience
+          Experience
         </div>
         <div class="section-content">
 
@@ -197,7 +234,7 @@
 
       <section id="research-experience">
         <div class="section-title">
-          Research Experience
+          Researches
         </div>
         <div class="section-content">
 
@@ -221,7 +258,7 @@
               Research Project (2019) | with Sanjay Kariyappa, PhD Student @ Georgia Tech
             </div>
             <div class="block-content">
-              Researched on reducing inference computation on MobileNet by pruning channels that contain little information.
+              Researched on reducing inference computation on MobileNetV2 by pruning channels that contain little "useful" information.
             </div>
           </div>
 
@@ -233,7 +270,7 @@
               Research Project (2017) | with Dr. Moinuddin Qureshi, Professor @ Georgia Tech
             </div>
             <div class="block-content">
-              Researched on supporting multi-way set associativity in HBM alloy-cache.
+              Researched on reducing unnecessary L4 lookups & supporting multi-way set associativity in HBM alloy-cache while maintaining low memory latency.
             </div>
           </div>
 
@@ -254,7 +291,7 @@
 
 
 
-      <section id="projects">
+      <section id="projects-knowledge">
         <div class="section-title">
           Projects & Knowledge
         </div>
@@ -276,7 +313,7 @@
               Massively Parallel GPU Programming
             </div>
             <div class="block-content">
-              <b>-</b> CUDA C++ implementation of GPU-accelerated LeNet-5 CNN image classification kernel with asynchronous api calls, CUDA streams, and other optimization techniques
+              <b>-</b> CUDA C++ implementation of GPU-accelerated LeNet-5 CNN image classification kernel with asynchronous API calls, CUDA streams, and other optimization techniques
             </div>
           </div>
 
@@ -306,7 +343,7 @@
 
 
 
-      <section id="awards">
+      <section id="award">
         <div class="section-title">
           Honors & Awards
         </div>

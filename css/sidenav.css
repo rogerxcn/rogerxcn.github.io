@@ -1,0 +1,71 @@
+@media screen and (min-width: 60rem) and (min-height: 400px) {
+  #mySidenav a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -5px; /* Position them outside of the screen */
+    transition: 0.15s; /* Add transition on hover */
+    padding: 10px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Increase font size */
+    color: #666666; /* White text color */
+  }
+
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+
+  /* The about link: 20px from the top with a green background */
+  #home {
+    top: 120px;
+    background-color: white;
+  }
+
+  #skills {
+    top: 160px;
+    background-color: white;
+  }
+
+  #education {
+    top: 200px;
+    background-color: white;
+  }
+
+  #job {
+    top: 240px;
+    background-color: white;
+  }
+
+  #research {
+    top: 280px;
+    background-color: white;
+  }
+
+  #projects {
+    top: 320px;
+    background-color: white;
+  }
+
+  #awards {
+    top: 360px;
+    background-color: white;
+  }
+
+}
+
+@media screen and (max-width: 60rem) {
+  #mySidenav a {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  #mySidenav a {
+    visibility: hidden;
+  }
+}
+
+@media print {
+  #mySidenav a {
+    visibility: hidden;
+  }
+}
